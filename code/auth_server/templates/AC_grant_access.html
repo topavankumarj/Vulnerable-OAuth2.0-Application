@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grant Access</title>
+</head>
+<body>
+  <div style="text-align:center"> 
+  <img src="https://aristotlebuzz.com/wp-content/uploads/2017/01/Facebook.png" width="628" height="220">
+  <h3>CoolMart is requesting access to your account:</h3>
+  <p>Sign in to grant access.</p>
+  <form action="/signin" method="post">
+    <p>Username:</p>
+    <input type="text" name="username">
+    <p>Password:</p>
+    <input type="Password" name="password">
+    <input type="hidden" name="client_id" value="{{client_id}}">
+    <input type="hidden" name="redirect_url" value="{{redirect_url}}">
+    <p>
+      <input type="submit" value="Sign in">
+    </p>
+  </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> User Details (Web Application)</title>
+</head>
+<body>
+<div style="text-align:center"> 
+<img src="http://i.imgur.com/TdMA8Fv.jpg" width="628" height="220">
+	<h2>User Details</h2>
+	<div style="text-align:center">
+	<table align="center">
+	{% for cli in users_details %}
+	  <tr>
+	    <th>Name</th>
+		</tr>
+	  <tr align=center>
+	  	<td>{{ cli['Name'] }}</td>
+      </tr>
+      <tr>
+	    <th>Email</th>
+		</tr>
+		<tr align=center>
+	  	<td>{{ cli['Email'] }}</td>
+	  </tr>
+		<tr>
+	    <th>User UUID</th>
+		</tr>
+	  <tr align=center>
+	  	<td >{{ cli['UUID'] }}</td>
+		</tr> 
+
+	  {% endfor %}
+	</table>
+	</div>
+</div>
+</body>
+</html>

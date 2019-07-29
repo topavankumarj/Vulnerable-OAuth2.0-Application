@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resource Owner Password Credentials Client (Web Application)</title>
+</head>
+<body>
+	<h2>Available Users</h2>
+	<div style="width:105%">
+	<table style="width:25%" align="left">
+	  <tr>
+	    <th>Name</th>
+	    <th>Email</th> 
+		</tr>
+	  {% for user in users %}
+	  <tr>
+	  	<td >{{ user['Name'] }}</td>
+	  	<td >{{ user['email'] }}</td>
+	  </tr>
+	  {% endfor %}
+	</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Client Credentials (Web Application)</title>
+</head>
+<body>
+	<h2>Client Credentials</h2>
+	<div>
+	<table>
+	{% for cli in cli_data %}
+	  <tr>
+	    <th>Cleint_ID</th>
+		</tr>
+	  <tr align=center>
+	  	<td>{{ cli['Client_ID'] }}</td>
+	  </tr>
+		<tr>
+	    <th>Cleint_Secret</th>
+		</tr>
+	  <tr align=center>
+	  	<td >{{ cli['Client_Secret'] }}</td>
+		</tr> 
+
+	  {% endfor %}
+	</table>
+	</div>
+</body>
+</html>
